@@ -1,0 +1,1134 @@
+/* Algemene stijlen */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: black;
+    font-family: 'Montserrat', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between; /* Pushes elements to left & right */
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Space between nav items */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.3s ease;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 0.5rem 1rem;
+}
+
+ .welcome, .intro h3, .jumbo-text, .brand-text, .project-titel h2, .project-1 h2, .project-1 p, .project-2 h2, .project-2 p, .footer-text p {
+        color: white;
+        
+    }
+
+    .welcome h1 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 200;
+        font-size: 7rem;
+        margin-bottom: 19rem;
+        margin-top: 15rem;
+        opacity: 0;
+        animation: simpleFadeIn 2s ease-in forwards;
+        
+    }
+
+    .line-container {
+        position: absolute;
+        width: 100%;
+        top: 57vh !important; 
+        left: 44.3%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .vertline {
+        width: 3px;
+        background-color: #ffffff;
+        height: 0; 
+        margin-right: 12.08rem;
+        
+        
+    }
+    
+    @keyframes simpleFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .animation, .intro-img {
+        margin-top: -1.3rem; 
+    }
+    
+
+    .line-container2 {
+        position: absolute;
+        width: 100%;
+        top: 290.6vh; 
+        left: 46.5%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .vertline2 {
+        width: 2.65px;
+        background-color: #ffffff;
+        height: 0; 
+        margin-right: 12.83rem;
+    }
+    
+    @keyframes simpleFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    .line-container3 {
+        position: absolute;
+        width: 100%;
+        top: 230.7vh; 
+        left: 81.7%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .vertline3 {
+        width: 2.5px;
+        background-color: #ffffff;
+        height: 0; 
+        margin-right: 12.08rem;
+    }
+
+    .flex-container{
+        display: flex;
+    }
+    
+    .flex-container img {
+        width: 100%;
+        height:auto;
+        margin-left: 3rem;
+        
+        
+    }
+    
+    .intro{
+        display: flex;
+        
+
+    }
+    
+    .text-animation h1 {
+        display: flex;
+        justify-content: end;
+        font-size: 0.8rem;
+        color: white;
+        
+        
+        
+        
+        
+    }
+    
+    h3.text-animation{
+        
+        font-weight: 400;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-left: 5rem;
+        margin-bottom: 8rem;
+        
+        
+    }
+    
+    .jumbo-text p{
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 0.2rem;
+        margin-top: 1rem;
+        margin-left: 7rem;
+        
+      
+    }
+    
+    
+    span{
+        
+        padding-bottom: 2.8rem;
+    }
+    
+    
+    
+    
+    h3 > span {
+        position: relative;
+        display: inline-block;
+        color: orange;
+        height: 1rem;
+        vertical-align: bottom;
+        overflow: hidden;
+    }
+    
+    h3 > span > span {
+        display: block;
+        animation: animateWords 5s infinite ease;
+    }
+    
+    .intro-btn{
+        padding: 2%;
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-left: 35rem;
+    
+    }
+    
+    .intro-btn a {
+        color: white;
+        text-decoration: none;
+        padding-bottom: 1.2rem;
+        padding-top: 1.2rem ;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: #000; 
+        border: 0.05rem solid white; 
+        position: relative;
+        transition: all 0.3s ease;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        
+        
+    }
+    
+    .intro-btn a:hover {
+        background-color: orange;
+        border-color: orange;
+    }
+    
+    @keyframes animateWords {
+        0% {transform: translateY(0%);}
+        25% {transform: translateY(-100%);}
+        50% {transform: translateY(-200%);}
+        75% {transform: translateY(-300%);}
+        100% {transform: translateY(-400%);}
+    }
+    
+    .intro,
+    .brand-package,
+    .projects,
+    .intro-btn {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.2s ease;
+    }
+    
+    
+    .reveal {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    @keyframes typing {
+        from { width: 0; opacity: 0; }
+        to { width: 7ch; opacity: 1; }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+    }
+    
+    
+    .brand-text h2{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        font-size: 3.98rem;
+        text-align: center;
+        margin-bottom: 15rem;
+        margin-top: 18.3rem;
+    
+    }
+    
+    .brand-package p{
+        color: white;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 2.91rem;
+        font-weight: 300;
+        
+        
+    }
+    
+    
+    
+    .brand-text {
+        opacity: 0;
+        transform: translateY(20px);
+        
+    }
+    
+    .brand-text.reveal{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    
+    .tuinen-img{
+        display: flex;
+        margin-top: 7rem;
+    }
+    
+    .img-1{
+        width: 25%;
+        height: auto;
+        margin: 0 auto 1.5rem; 
+        display: block; 
+    }
+    
+    .img-2{
+        width: 25%;
+        height:auto;
+        margin-left: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .img-3{
+        width: 30%;
+        height: auto;
+        margin: 0 auto 1.5rem; 
+        display: block; 
+    }
+    
+    .project-titel h2 {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 300 !important;
+        font-size: 4rem !important;
+        text-align: center !important;
+        margin-bottom: 7rem !important;
+        margin-top: 15rem !important;
+    }
+    
+    
+    
+    
+    .project-1 h2{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .project-1 img{
+        width: 75%;
+        height:auto;
+        margin-left: 10rem;
+        
+    }
+    
+    .project-1 p{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 2.4rem;
+        margin-top: 2rem;
+    }
+    
+    .project-1-btn{
+        padding: 2%;
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 1.5rem;
+       
+    
+    }
+    
+    .project-1-btn a {
+        color: white;
+        text-decoration: none;
+        padding-bottom: 1.2rem;
+        padding-top: 1.2rem ;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: #000; 
+        border: 0.05rem solid white; 
+        position: relative;
+        transition: all 0.3s ease;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        
+        
+    }
+    
+    .project-1-btn a:hover {
+        background-color: orange;
+        border-color: orange;
+    }
+    
+    @keyframes animateWords {
+        0% {transform: translateY(0%);}
+        25% {transform: translateY(-100%);}
+        50% {transform: translateY(-200%);}
+        75% {transform: translateY(-300%);}
+        100% {transform: translateY(-400%);}
+    }
+    
+    .project-titel h2{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        font-size: 2.3rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-top: 9rem;
+    }
+    
+    .project-2 h2{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 10rem;
+    }
+    
+    .project-2 img{
+        display: flex;
+        justify-content: center;
+        width:  35%;
+        height:auto;
+        margin-left: 27rem;
+    }
+    
+    .project-2 p{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 2.4rem;
+        margin-top: 2rem;
+    }
+    
+    .project-2-btn{
+        padding: 2%;
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 1.5rem;
+       
+    
+    }
+    
+    .project-2-btn a {
+        color: white;
+        text-decoration: none;
+        padding-bottom: 1.2rem;
+        padding-top: 1.2rem ;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: #000; 
+        border: 0.05rem solid white; 
+        position: relative;
+        transition: all 0.3s ease;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        
+        
+    }
+    
+    .project-2-btn a:hover {
+        background-color: orange;
+        border-color: orange;
+    }
+    
+    @keyframes animateWords {
+        0% {transform: translateY(0%);}
+        25% {transform: translateY(-100%);}
+        50% {transform: translateY(-200%);}
+        75% {transform: translateY(-300%);}
+        100% {transform: translateY(-400%);}
+    }
+    
+    .footer{
+        margin-top: 7rem;
+    }
+    
+    .footer-left {
+        text-align: left;
+        margin-left: 1rem;
+        
+    }
+    
+    .footer-left p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 1rem;
+    
+    }
+    
+    .footer-right {
+        text-align: left;
+        margin-left: 1rem;
+    }
+    
+    .footer-right p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 1rem;
+    
+    }
+    
+    .footer-left ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 0.5rem;
+    }
+    
+    .footer-left li {
+        margin-bottom: 5px;
+    }
+    
+    .footer-left a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 0.5rem;
+    }
+    
+    .social-icon {
+        font-size: 24px;
+        color: white;
+        transition: color 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        color: orange;
+    }
+    
+    .footer-copy{
+        color: white;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+   
+ 
+
+@media (max-width: 768px) {
+    
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+        width: 200px;
+        padding: 1rem;
+        text-align: right;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav.show {
+        display: flex;
+    }
+
+    .welcome h1 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 200;
+        font-size: 4rem;
+        margin-bottom: 19rem;
+        margin-top: 15rem;
+        opacity: 0;
+        animation: simpleFadeIn 2s ease-in forwards;
+        
+    }
+
+    .line-container {
+        position: absolute;
+        width: 100%;
+        top: 50.5vh !important; 
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .vertline {
+        width: 2px;
+        background-color: #ffffff;
+        height: 0; 
+        margin-right: 12.08rem;
+        
+        
+    }
+
+    .animation,.intro-img {
+        margin-top: 0; /* Pas deze waarde aan voor een betere positie */
+    }
+    
+    @keyframes simpleFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+
+    .line-container2 {
+        position: absolute;
+        width: 100%;
+        top: 224.6vh; 
+        left: 49.23%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .vertline2 {
+        width: 2.65px;
+        background-color: #ffffff;
+        height: 0; 
+        margin-right: 12.83rem;
+    }
+    
+    @keyframes simpleFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    .line-container3 {
+        position: absolute;
+        width: 100%;
+        top: 160.8vh; 
+        left: 102.4%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .vertline3 {
+        width: 2px;
+        background-color: #ffffff;
+        height: 0; 
+        margin-right: 12.08rem;
+    }
+    
+    
+    .flex-container{
+        display: flex;
+        
+    }
+    
+    .flex-container img {
+        width: 100%;
+        height:auto;
+        margin-left: 0rem;
+        
+    }
+    
+    .intro{
+        display: flex;
+    }
+    
+    .text-animation h1 {
+        display: flex;
+        justify-content: end;
+        font-size: 0.8rem;
+        color: white;
+        
+        
+        
+        
+        
+    }
+    
+    h3.text-animation{
+        
+        font-weight: 400;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-left: 0rem;
+        margin-bottom: 0rem;
+        
+    }
+    
+    .jumbo-text p{
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 0.2rem;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        
+      
+    }
+    
+    
+    span{
+        
+        padding-bottom: 1.4rem;
+    }
+    
+    
+    
+    
+    h3 > span {
+        position: relative;
+        display: inline-block;
+        color: orange;
+        height: 1rem;
+        vertical-align: bottom;
+        overflow: hidden;
+    }
+    
+    h3 > span > span {
+        display: block;
+        animation: animateWords 5s infinite ease;
+    }
+    
+    .intro-btn{
+        padding: 2%;
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 14rem;
+    
+    }
+    
+    .intro-btn a {
+        color: white;
+        text-decoration: none;
+        padding: 0.4rem;
+        padding-top: 0.4rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        background-color: #000; 
+        border: 0.05rem solid white; 
+        position: relative;
+        transition: all 0.3s ease;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        
+        
+    }
+    
+    .intro-btn a:hover {
+        background-color: orange;
+        border-color: orange;
+    }
+    
+    @keyframes animateWords {
+        0% {transform: translateY(0%);}
+        25% {transform: translateY(-100%);}
+        50% {transform: translateY(-200%);}
+        75% {transform: translateY(-300%);}
+        100% {transform: translateY(-400%);}
+    }
+    
+    .intro,
+    .brand-package,
+    .projects,
+    .intro-btn {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.2s ease;
+    }
+    
+    
+    .reveal {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    @keyframes typing {
+        from { width: 0; opacity: 0; }
+        to { width: 7ch; opacity: 1; }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+    }
+    
+    
+    .brand-text h2{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        font-size: 2.9rem;
+        text-align: center;
+        margin-bottom: 15rem;
+        margin-top: 18.3rem;
+    
+    }
+    
+    .brand-package p{
+        color: white;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 2.1rem;
+        font-weight: 300;
+        margin-right: 0.04rem;
+        
+    }
+    
+    
+    
+    .brand-text {
+        opacity: 0;
+        transform: translateY(20px);
+        
+    }
+    
+    .brand-text.reveal{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    
+    .tuinen-img{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .img-1{
+        width: 75%;
+        height: auto;
+        margin: 0 auto 1.5rem; 
+        display: block; 
+    }
+    
+    .img-2{
+        width: 75%;
+        height:auto;
+        margin-left: 4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .img-3{
+        width: 75%;
+        height: auto;
+        margin: 0 auto 1.5rem; 
+        display: block; 
+    }
+    
+    .project-titel h2 {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 300 !important;
+        font-size: 2rem !important;
+        text-align: center !important;
+        margin-bottom: 9rem !important;
+        margin-top: 9rem !important;
+    }
+    
+    
+    
+    
+    .project-1 h2{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .project-1 img{
+        width: 75%;
+        height:auto;
+        margin-left: 3.9rem;
+    }
+    
+    .project-1 p{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 2.4rem;
+        margin-top: 2rem;
+    }
+    
+    .project-1-btn{
+        padding: 2%;
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 1rem;
+       
+    
+    }
+    
+    .project-1-btn a {
+        color: white;
+        text-decoration: none;
+        padding: 0.4rem;
+        background-color: #000; 
+        border: 0.05rem solid white; 
+        position: relative;
+        transition: all 0.3s ease;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        
+        
+    }
+    
+    .project-1-btn a:hover {
+        background-color: orange;
+        border-color: orange;
+    }
+    
+    @keyframes animateWords {
+        0% {transform: translateY(0%);}
+        25% {transform: translateY(-100%);}
+        50% {transform: translateY(-200%);}
+        75% {transform: translateY(-300%);}
+        100% {transform: translateY(-400%);}
+    }
+    
+    .project-titel h2{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        font-size: 2.3rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-top: 9rem;
+    }
+    
+    .project-2 h2{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .project-2 img{
+        width: 75%;
+        height:auto;
+        margin-left: 3.9rem;
+    }
+    
+    .project-2 p{
+        font-family: 'Montserrat';
+        font-style: serif;
+        font-weight: 300;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 2.4rem;
+        margin-top: 2rem;
+    }
+    
+    .project-2-btn{
+        padding: 2%;
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 1rem;
+       
+    
+    }
+    
+    .project-2-btn a {
+        color: white;
+        text-decoration: none;
+        padding: 0.4rem;
+        background-color: #000; 
+        border: 0.05rem solid white; 
+        position: relative;
+        transition: all 0.3s ease;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        
+        
+    }
+    
+    .project-2-btn a:hover {
+        background-color: orange;
+        border-color: orange;
+    }
+    
+    @keyframes animateWords {
+        0% {transform: translateY(0%);}
+        25% {transform: translateY(-100%);}
+        50% {transform: translateY(-200%);}
+        75% {transform: translateY(-300%);}
+        100% {transform: translateY(-400%);}
+    }
+    
+    .footer{
+        margin-top: 7rem;
+    }
+    
+    .footer-left {
+        text-align: left;
+        margin-left: 1rem;
+        
+    }
+    
+    .footer-left p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 1rem;
+    
+    }
+    
+    .footer-right {
+        text-align: left;
+        margin-left: 1rem;
+    }
+    
+    .footer-right p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 1rem;
+    
+    }
+    
+    .footer-left ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 0.5rem;
+    }
+    
+    .footer-left li {
+        margin-bottom: 5px;
+    }
+    
+    .footer-left a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 0.5rem;
+    }
+    
+    .social-icon {
+        font-size: 24px;
+        color: white;
+        transition: color 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        color: orange;
+    }
+    
+    .footer-copy{
+        color: white;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+   
+    
+    
+
+}
+
+
+
+
+
+
+
+
