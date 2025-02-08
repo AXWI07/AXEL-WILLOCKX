@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Scroll-triggered animations
 const elementsToReveal = document.querySelectorAll(
-    '.intro, .brand-package, .brand-text, .projects, .intro-btn, .project-1'
+    '.intro, .brand-package, .brand-text, .projects, .project-titel, .intro-btn, .project-1'
 );
 
 const observer = new IntersectionObserver((entries) => {
@@ -23,7 +23,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.2,
+    threshold: 0.1,
     rootMargin: '0px 0px 10px 0px'
 });
 
