@@ -1,4 +1,4 @@
-/* Algemene stijlen */
+    
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -247,16 +247,21 @@ nav {
         animation: animateWords 5s infinite ease;
     }
     
+
+
+    
     .intro-btn{
         padding: 2%;
-        margin-bottom: 4rem;
         text-align: center;
         font-size: 1.5rem;
-        margin-left: 35rem;
-    
+        margin-top: 3rem;
+        position: relative;
+        margin-left: 3.2rem;
     }
     
     .intro-btn a {
+        
+        
         color: white;
         text-decoration: none;
         padding-bottom: 1.2rem;
@@ -764,7 +769,7 @@ nav {
     
     span{
         
-        padding-bottom: 1.4rem;
+        padding-bottom: 1.3rem;
     }
     
     
@@ -789,11 +794,15 @@ nav {
         margin-bottom: 4rem;
         text-align: center;
         font-size: 1rem;
-        margin-left: 14rem;
+        position: relative;
+        margin-top: 3%;
+        margin-left: 0;
     
     }
     
     .intro-btn a {
+        position: absolute;
+        
         color: white;
         text-decoration: none;
         padding: 0.4rem;
